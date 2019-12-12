@@ -18,20 +18,12 @@ $yellow: green;
 	<title>Contact</title>
 </svelte:head>
 
-<div class="row">
-	<div class="col-6">
-		<img class="img-fluid" src="http://placehold.it/1000x1000" alt="">
-	</div>
-	<div class="col-6">
-		<img class="img-fluid" src="http://placehold.it/1000x1000" alt="">
-	</div>
-</div>
-
 {#each cats as cat}
 	<p>{cat.label}: {cat.value}</p>
 {/each}
 
 <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
