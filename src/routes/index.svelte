@@ -49,7 +49,7 @@
 
 <svelte:head>
 	<title>Sapper project template</title>
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://identity.netlify.com/v1/netlify-identity.js"></script>
 </svelte:head>
 
 <h1>Great test!</h1>
