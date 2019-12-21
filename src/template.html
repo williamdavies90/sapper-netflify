@@ -22,8 +22,10 @@
 	%sapper.head%
 </head>
 <body>
-	<!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
+	<script>
+		import Row from '../components/Row.svelte';
+		import Col from '../components/Col.svelte';
+	</script>
 	<div class="container" id='sapper'>%sapper.html%</div>
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`

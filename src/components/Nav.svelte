@@ -37,7 +37,7 @@
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: rgb(255,62,0);
+		background-color: darkgreen;
 		display: block;
 		bottom: -1px;
 	}
@@ -52,7 +52,7 @@
 <nav>
 	<ul>
 		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
+		<li><a class:selected='{segment === "location"}' href='location'>location</a></li>
 		<li><a class:selected='{segment === "contact"}' href='contact'>contact</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
