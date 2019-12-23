@@ -90,7 +90,7 @@ nav {
 		<li><a class:selected='{segment === "accomodation"}' href='accomodation'><Icon class="mx-auto d-block" icon={faHotel}></Icon><span>accomodation</span></a></li>
 		<li><a class:selected='{segment === "photos"}' href='photos'><Icon class="mx-auto d-block" icon={faCamera}></Icon><span>photos</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
-		<li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li>
+		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<!-- <li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li> -->
