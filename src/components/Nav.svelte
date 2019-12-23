@@ -54,11 +54,11 @@
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		padding: 0.5em;
 		display: block;
 		text-transform: uppercase;
 	}
-
+	
 /*Touch Only*/
 nav {
 	position: fixed;
@@ -66,18 +66,29 @@ nav {
 	z-index: 999999;
 	width: 100%;
 	border-top: 1px solid rgba(255,62,0,0.1);
+	
 	ul {
+		width: 100%;
 		max-width: 600px;
 		margin-bottom: 0px;
 		li {
-			width: 100%/5;
+			width: 25%;
+			color: gray !important;
+			a {
+				font-size: 26px;
+				line-height: 16px; 
+				padding-bottom: 5px;
+				span {
+					font-size: 12px !important;
+				}
+			}
 			.selected {
 				color: darkgreen;
 				&:after {
 					background-color: inherit;
 				}
 			}
-		}
+		}	
 	}
 }
 
@@ -85,10 +96,10 @@ nav {
 
 <nav>
 	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'><Icon class="mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
-		<li><a class:selected='{segment === "location"}' href='location'><Icon class="mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
-		<li><a class:selected='{segment === "accomodation"}' href='accomodation'><Icon class="mx-auto d-block" icon={faHotel}></Icon><span>accomodation</span></a></li>
-		<li><a class:selected='{segment === "photos"}' href='photos'><Icon class="mx-auto d-block" icon={faCamera}></Icon><span>photos</span></a></li>
+		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
+		<li><a class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
+		<li><a class:selected='{segment === "accomodation"}' href='accomodation'><Icon class="test mx-auto d-block" icon={faHotel}></Icon><span>accomodation</span></a></li>
+		<li><a class:selected='{segment === "photos"}' href='photos'><Icon class="test mx-auto d-block" icon={faCamera}></Icon><span>photos</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
