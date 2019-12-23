@@ -1,10 +1,5 @@
 <style lang="scss">
-$yellow: green;
-	h1 {
-		span {
-			color: $yellow;
-		}
-	}
+
 </style>
 
 <script>
