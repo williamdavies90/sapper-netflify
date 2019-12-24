@@ -1,7 +1,12 @@
 <script>
+	import { Swipe, SwipeItem } from "svelte-swipe"; // gzipped 3.37 KB
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
 	import { onMount } from 'svelte';
+	let autoplay = false;
+	let delay = 2000; //ms
+	let showIndicators = true;
+	let transitionDuration = 1000; //ms
 	//countdown timer
 	onMount(() => {
 		const second = 1000,
@@ -46,12 +51,29 @@
 		display: block;
 		font-size: 1.5rem;
 	}
+	.swipe-holder{
+		height: 30vh;
+		width: 100%;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+  	}
 </style>
 
 <svelte:head>
 	<title>Lucy &amp; Tim</title>
 </svelte:head>
-<img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">
+<div class="swipe-holder">
+  <Swipe {showIndicators} {autoplay} {delay} {transitionDuration}>
+    <SwipeItem>
+      <img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt="">
+    </SwipeItem>
+    <SwipeItem>
+      <img class="mx-auto d-block img-fluid" src="../tim-and-lucy2-mobile.jpg" alt="">
+    </SwipeItem>
+  </Swipe>
+</div>
 <ul class="text-center">
     <li><span id="days"></span>days</li>
     <li><span id="hours"></span>Hours</li>
