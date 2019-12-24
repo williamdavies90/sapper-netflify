@@ -1,4 +1,6 @@
 <script>
+	import Row from '../components/Row.svelte';
+	import Col from '../components/Col.svelte';
 	import { onMount } from 'svelte';
 	//countdown timer
 	onMount(() => {
@@ -33,7 +35,7 @@
 
 	li {
 		display: inline-block;
-		font-size: 1.5em;
+		font-size: 0.5em;
 		list-style-type: none;
 		padding: 1em;
 		text-transform: uppercase;
@@ -42,7 +44,7 @@
 
 	li span {
 		display: block;
-		font-size: 3rem;
+		font-size: 1.5rem;
 	}
 </style>
 
@@ -51,6 +53,7 @@
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
+<Row>
 <img class="d-block mx-auto img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">
 
 <ul class="text-center">
@@ -58,4 +61,5 @@
     <li><span id="hours"></span>Hours</li>
     <li><span id="minutes"></span>Minutes</li>
     <li><span id="seconds"></span>Seconds</li>
-  </ul>
+</ul>
+</Row>
