@@ -6,6 +6,7 @@
 <style lang="scss">
 header {
 	border-bottom: 1px solid rgba(255,62,0,0.1);
+	margin-bottom: 1em;
 }
 </style>
 
