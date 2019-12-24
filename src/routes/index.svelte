@@ -35,7 +35,7 @@
 
 	li {
 		display: inline-block;
-		font-size: 0.5em;
+		font-size: 1em;
 		list-style-type: none;
 		padding: 1em;
 		text-transform: uppercase;
@@ -44,19 +44,14 @@
 
 	li span {
 		display: block;
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<title>Lucy &amp; Tim</title>
 </svelte:head>
-
-<Row>
-<img class="d-block mx-auto img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">
-<div class="clearfix"></div>
-</Row>
+<img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">
 <ul class="text-center">
     <li><span id="days"></span>days</li>
     <li><span id="hours"></span>Hours</li>
