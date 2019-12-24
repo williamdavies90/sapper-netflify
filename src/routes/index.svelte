@@ -55,11 +55,11 @@
 
 <Row>
 <img class="d-block mx-auto img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">
-
+<div class="clearfix"></div>
+</Row>
 <ul class="text-center">
     <li><span id="days"></span>days</li>
     <li><span id="hours"></span>Hours</li>
     <li><span id="minutes"></span>Minutes</li>
     <li><span id="seconds"></span>Seconds</li>
 </ul>
-</Row>
