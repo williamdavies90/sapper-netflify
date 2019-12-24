@@ -44,7 +44,7 @@
 
 	li span {
 		display: block;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 </style>
 
