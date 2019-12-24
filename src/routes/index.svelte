@@ -26,12 +26,6 @@
 		margin: 0 0 0.5em 0;
 	}
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
 	p {
 		margin: 1em auto;
 	}
@@ -48,4 +42,4 @@
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
-<p>Wills Pwa</p>
+<img class="d-block mx-auto img-fluid" src="../tim-and-lucy-mobile.jpg" alt="The Happy Couple">

@@ -3,11 +3,8 @@
 	import {
 		faHome,
 		faMap,
-		faEnvelope,
-		faMusic,
 		faCamera,
-		faBed,
-		faHotel,
+		faBed
 	} from "@fortawesome/free-solid-svg-icons";
 	export let segment;
 </script>
@@ -75,14 +72,14 @@ nav {
 			width: 25%;
 			color: gray !important;
 			a {
-				font-size: 26px;
+				font-size: 22px;
 				line-height: 16px; 
 				padding-bottom: 5px;
 				span {
 					font-size: 12px !important;
 				}
 			}
-			.selected {
+			a:hover, .selected {
 				color: darkgreen;
 				&:after {
 					background-color: inherit;
@@ -98,7 +95,7 @@ nav {
 	<ul>
 		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
 		<li><a class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
-		<li><a class:selected='{segment === "accomodation"}' href='accomodation'><Icon class="test mx-auto d-block" icon={faHotel}></Icon><span>accomodation</span></a></li>
+		<li><a class:selected='{segment === "hotels"}' href='hotels'><Icon class="test mx-auto d-block" icon={faBed}></Icon><span>hotels</span></a></li>
 		<li><a class:selected='{segment === "photos"}' href='photos'><Icon class="test mx-auto d-block" icon={faCamera}></Icon><span>photos</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->
