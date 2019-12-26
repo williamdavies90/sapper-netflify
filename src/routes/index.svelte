@@ -20,20 +20,24 @@
 	img{
 		max-width: 100%;
 		height: auto;
-  	}
+	  }
 </style>
 
 <svelte:head>
 	<title>Lucy &amp; Tim</title>
 </svelte:head>
-
-    
-<Carousel perPage={{ 800: 1, 500: 1 }}>
-  <div class="slide-content"><img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt=""></div>
-  <div class="slide-content"><img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt=""></div>
-  <div class="slide-content"><img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt=""></div>
-  <div class="slide-content"><img class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt=""></div>
+<div>
+<Carousel perPage={{800: 1, 500: 1 }}>
+  <span class="control" slot="left-control">
+    <ChevronLeftIcon />
+  </span>
+  <div class="slide-content"><img width="640" class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg" alt=""></div>
+  <div class="slide-content"><img width="640" class="mx-auto d-block img-fluid" src="../tim-and-lucy2-mobile.jpg" alt=""></div>
+  <span class="control" slot="right-control">
+    <ChevronRightIcon />
+  </span>
 </Carousel>
+</div>
 
 <ul class="text-center">
     <li><span id="days"></span>days</li>
@@ -46,10 +50,10 @@
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
 	import { onMount } from 'svelte';
-	import Carousel from '@beyonk/svelte-carousel'
+	import Carousel from '@beyonk/svelte-carousel';
+	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
 	
 	onMount(() => {
-		
 		const second = 1000,
 		minute = second * 60,
 		hour = minute * 60,
@@ -67,4 +71,5 @@
 		document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 		}, second);
 	});
+	
 </script>
