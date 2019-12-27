@@ -13,6 +13,6 @@
 
 <p>Hashtag your photos #timandlucywedding to have themn appear all in one place.</p>
 
-<a target="_blank" href="http://instagram.com/tags/timandlucywedding">View photos</a>
+<a target="_blank" href="http://urlgeni.us/instagram/timandlucywedding">View photos</a>
 
 
