@@ -13,7 +13,7 @@
 <h2>Accomodation</h2>
 <p><a target="_blank" href="https://www.thecrownandsandys.co.uk/">The Crown and Sandys</a> (Limited Accomodation)</p>
 <p><a target="_blank" href="http://leakingwell.com/">The Leaking Well</a></p>
-<p><a target="_blank" href="https://www.thehadleybowlinggreen.com/"></a>The Hadley Bowling Green</p>
+<p><a target="_blank" href="https://www.thehadleybowlinggreen.com/">The Hadley Bowling Green</a></p>
 <p><a target="_blank" href="https://www.travelodge.co.uk/hotels/134/Hartlebury-hotel">Travelodge Hartlebury</a></p>
 <p><a target="_blank" href="https://www.travelodge.co.uk/hotels/127/Droitwich-hotel">Travelodge Rashwood Hill</a></p>
 
