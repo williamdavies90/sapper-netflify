@@ -94,7 +94,7 @@ nav {
 <nav>
 	<ul>
 		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
-		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
+		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>venue</span></a></li>
 		<li><a class:selected='{segment === "hotels"}' href='hotels'><Icon class="test mx-auto d-block" icon={faBed}></Icon><span>hotels</span></a></li>
 		<li><a class:selected='{segment === "gifts"}' href='gifts'><Icon class="test mx-auto d-block" icon={faGift}></Icon><span>gifts</span></a></li>
 		<li><a class:selected='{segment === "photos"}' href="http://instagram.com/tags/timandlucywedding"><Icon class="test mx-auto d-block" icon={faInstagram}></Icon><span>photos</span></a></li>
