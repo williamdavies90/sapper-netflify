@@ -3,7 +3,8 @@
 	import {
 		faHome,
 		faMap,
-		faBed
+		faBed,
+		faGift
 	} from "@fortawesome/free-solid-svg-icons";
 	import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 	export let segment;
@@ -68,7 +69,7 @@ nav {
 		max-width: 600px;
 		margin-bottom: 0px;
 		li {
-			width: 25%;
+			width: 20%;
 			color: gray !important;
 			a {
 				font-size: 22px;
@@ -95,6 +96,7 @@ nav {
 		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
 		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
 		<li><a class:selected='{segment === "hotels"}' href='hotels'><Icon class="test mx-auto d-block" icon={faBed}></Icon><span>hotels</span></a></li>
+		<li><a class:selected='{segment === "gifts"}' href='gifts'><Icon class="test mx-auto d-block" icon={faGift}></Icon><span>gifts</span></a></li>
 		<li><a class:selected='{segment === "photos"}' href="http://instagram.com/tags/timandlucywedding"><Icon class="test mx-auto d-block" icon={faInstagram}></Icon><span>photos</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->

@@ -24,11 +24,12 @@
 
 <Countdown/>
 
+
+
 <script>
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
 	import Countdown from '../components/Countdown.svelte';
 	import Carousel from '@beyonk/svelte-carousel';
 	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
-	
 </script>

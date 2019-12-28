@@ -5,7 +5,7 @@ ul {
 
 li {
     display: inline-block;
-    font-size: 1em;
+    font-size: 0.9em;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;
@@ -14,7 +14,7 @@ li {
 
 li span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: darkgreen;
 }
 
