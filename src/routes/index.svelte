@@ -1,5 +1,7 @@
 <style>
-	
+	.date {
+		text-align: center;
+	}
 </style>
 
 <svelte:head>
@@ -17,6 +19,8 @@
 		</span>
 	</Carousel>
 </div>
+
+<h2 class="text-center mt-4 mb-0">June 27th 2020</h2>
 
 <Countdown/>
 

@@ -95,7 +95,7 @@ nav {
 		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
 		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>location</span></a></li>
 		<li><a class:selected='{segment === "hotels"}' href='hotels'><Icon class="test mx-auto d-block" icon={faBed}></Icon><span>hotels</span></a></li>
-		<li><a class:selected='{segment === "photos"}' href="instagram://tag?name=timandlucywedding"><Icon class="test mx-auto d-block" icon={faInstagram}></Icon><span>photos</span></a></li>
+		<li><a class:selected='{segment === "photos"}' href="http://instagram.com/tags/timandlucywedding"><Icon class="test mx-auto d-block" icon={faInstagram}></Icon><span>photos</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches

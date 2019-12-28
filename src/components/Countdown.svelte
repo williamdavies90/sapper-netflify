@@ -15,6 +15,7 @@ li {
 li span {
     display: block;
     font-size: 1.5rem;
+    color: darkgreen;
 }
 
 </style>
