@@ -1,10 +1,4 @@
-<style>
-	.date {
-		text-align: center;
-	}
-</style>
 <script>
-	import Image from "svelte-image";
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
 	import Countdown from '../components/Countdown.svelte';
