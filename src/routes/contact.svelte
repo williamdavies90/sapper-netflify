@@ -22,13 +22,14 @@
 {#each cats as cat}
 	<p>{cat.label}: {cat.value}</p>
 {/each}
-
+  <form name="contact2" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact2">
   <p><input type="radio" name="menu" value={1} bind:group={invite}> Day and Evening</p>
   <p><input type="radio" name="evening" value={2} bind:group={invite}>Evening</p>
   {#if invite == 1}
   day
-  <form name="contact2" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact2" />
+
+    
     {#each Array(guests) as _, i}
     <fieldset>
       <p><label>Name: <input type="text" name="name{i}" /></label></p>
@@ -50,27 +51,9 @@
     <p>
       <button type="submit">Send</button>
     </p>
-  </form>
+  
   {/if}
-  <!-- {#if invite == 2}
-  evening
-	 <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
-    <p>
-      <label>Your Name: <input type="text" name="name" /></label>   
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-    
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
   </form>
-  {/if} -->
   
 
 
