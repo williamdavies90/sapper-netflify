@@ -27,15 +27,15 @@
   <p><input type="radio" name="evening" value={2} bind:group={invite}>Evening</p>
   {#if invite == 1}
   day
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="rsvp-day" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     {#each Array(guests) as _, i}
     <fieldset>
-      <p><label>Name: <input type="text" name="name" /></label></p>
-      <p><label>Attending: <input type="text" name="attending" /></label></p>
-      <p><label>Starter: <input type="text" name="starter" /></label></p>
-      <p><label>Main Course: <input type="text" name="main_course" /></label></p>
-      <p><label>Dessert <input type="text" name="Dessert" /></label></p>
+      <p><label>Name: <input type="text" name="name{i}" /></label></p>
+      <p><label>Attending: <input type="text" name="attending{i}" /></label></p>
+      <p><label>Starter: <input type="text" name="starter{i}" /></label></p>
+      <p><label>Main Course: <input type="text" name="main_course{i}" /></label></p>
+      <p><label>Dessert <input type="text" name="Dessert{i}" /></label></p>
     </fieldset>
     {/each}
     <p>
