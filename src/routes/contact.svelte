@@ -27,8 +27,8 @@
   <p><input type="radio" name="evening" value={2} bind:group={invite}>Evening</p>
   {#if invite == 1}
   day
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
+  <form name="contact2" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact2" />
     {#each Array(guests) as _, i}
     <fieldset>
       <p><label>Name: <input type="text" name="name{i}" /></label></p>
