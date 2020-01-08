@@ -28,7 +28,7 @@
   {#if invite == 1}
   day
   <form name="rsvp-day" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="rsvp-day" value="rsvp-day" />
     {#each Array(guests) as _, i}
     <fieldset>
       <p><label>Name: <input type="text" name="name{i}" /></label></p>
