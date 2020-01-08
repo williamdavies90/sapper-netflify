@@ -1,6 +1,8 @@
 <script>
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
+	import Icon from 'fa-svelte'
+	import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 </script>
 
 <style lang="scss">

@@ -22,8 +22,7 @@ const preprocess = sveltePreprocess({
   },
   postcss: {
     plugins: [require("autoprefixer")]
-  },
-  ...image(),
+  }
 });
 
 export default {
@@ -39,7 +38,7 @@ export default {
         dev,
         hydratable: true,
         emitCss: true,
-        preprocess
+        preprocess: svelteImage()
       }),
       resolve({
         browser: true,
@@ -90,8 +89,8 @@ export default {
       }),
       svelte({
         generate: "ssr",
-		dev,
-		preprocess
+      dev,
+      preprocess
       }),
       resolve({
         dedupe
