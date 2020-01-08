@@ -27,8 +27,8 @@
   <p><input type="radio" name="evening" value={2} bind:group={invite}>Evening</p>
   {#if invite == 1}
   day
-  <form name="rsvp-day" method="POST" data-netlify="true">
-    <input type="hidden" name="rsvp-day" value="rsvp-day" />
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
     {#each Array(guests) as _, i}
     <fieldset>
       <p><label>Name: <input type="text" name="name{i}" /></label></p>
@@ -52,7 +52,7 @@
     </p>
   </form>
   {/if}
-  {#if invite == 2}
+  <!-- {#if invite == 2}
   evening
 	 <form name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
@@ -70,7 +70,7 @@
       <button type="submit">Send</button>
     </p>
   </form>
-  {/if}
+  {/if} -->
   
 
 
