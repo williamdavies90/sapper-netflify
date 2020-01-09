@@ -57,7 +57,7 @@
 		display: block;
 		text-transform: uppercase;
 	}
-	@media (max-width: 767px) {
+	
 /*Touch Only*/
 nav {
 	position: fixed;
@@ -89,7 +89,6 @@ nav {
 		}	
 	}
 }
-	}
 
 </style>
 
