@@ -13,8 +13,8 @@
 		<span class="control" slot="left-control">
 			<ChevronLeftIcon />
 		</span>
-		<div class="slide-content"><img width="640" class="mx-auto d-block" src="../tim-and-lucy-mobile.jpg"/></div>
-		<div class="slide-content"><img width="640" class="mx-auto d-block" src="../tim-and-lucy2-mobile.jpg"/></div>
+		<div class="slide-content"><img width="640" class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg"/></div>
+		<div class="slide-content"><img width="640" class="mx-auto d-block img-fluid" src="../tim-and-lucy2-mobile.jpg"/></div>
 		<span class="control" slot="right-control">
 			<ChevronRightIcon />
 		</span>

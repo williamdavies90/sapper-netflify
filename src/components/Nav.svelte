@@ -7,7 +7,7 @@
 		faGift,
 		faEnvelope
 	} from "@fortawesome/free-solid-svg-icons";
-	import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+	// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 	export let segment;
 </script>
 
