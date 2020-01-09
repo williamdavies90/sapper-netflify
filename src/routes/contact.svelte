@@ -56,6 +56,7 @@
       <textarea id="comment" name="comment" cols="40" rows="3" class="form-control"></textarea>
     </div>
   </div>
+  <input name="starter" type="hidden" value="">
     <p>Please fill out one of the below for each guest in your party including yourself</p>
     {#each Array(guests) as _, i}
     <div class="form-group row">
