@@ -26,13 +26,13 @@
     <div class="col-8">
       <div class="custom-controls-stacked">
         <div class="custom-control custom-radio">
-          <input bind:group={invite} name="day_and_evening" id="type_0" type="radio" required="required" class="custom-control-input" value={1}> 
+          <input bind:group={invite} name="type_of_guest" id="type_0" type="radio" required="required" class="custom-control-input" value={1}> 
           <label for="type_0" class="custom-control-label">Day and Evening</label>
         </div>
       </div>
       <div class="custom-controls-stacked">
         <div class="custom-control custom-radio">
-          <input bind:group={invite} name="evening_only" id="type_1" type="radio" required="required" class="custom-control-input" value={2}> 
+          <input bind:group={invite} name="type_of_guest" id="type_1" type="radio" required="required" class="custom-control-input" value={2}> 
           <label for="type_1" class="custom-control-label">Evening only</label>
         </div>
       </div>
@@ -162,5 +162,9 @@
     </div>
   </div>
 </form>
+<br>
+<br>
+<br>
+<br>
 
 
