@@ -44,11 +44,10 @@
       </div>
     </div>
   </div>
-    <input type="hidden" name="myFile" multiple>
-    {#if invite}
+    <!-- {#if invite} -->
       <p>Please upload a clear photo of the menu choices for each guest below</p>
-      <input type="file" name="myFile" multiple>
-    {/if}
+      <input type="file" name="myFile">
+    <!-- {/if} -->
   
   
   <div class="form-group row">
