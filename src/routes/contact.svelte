@@ -1,59 +1,37 @@
-<style lang="scss">
-
-</style>
-
 <script>
-	let cats = [
-		{ label: 'Address', value: 'SYSPAL, Cockshutt Lane' },
-		{ label: 'Telephone', value: '07527564964' }
-  ];
-  let invite = false;
+import Icon from 'fa-svelte'
+import {
+  faMobile,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
+  import Row from '../components/Row.svelte';
+  import Col from '../components/Col.svelte';
 </script>
-
+<style lang="scss">
+.green {
+  color: darkgreen;
+}
+a {
+	text-decoration: underline;
+}
+</style>
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
-  
-<form name="wedding-rsvp-v1" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="wedding-rsvp-v1">
-  <div class="form-group row">
-    <label for="name" class="col-4 col-form-label">Name</label> 
-    <div class="col-8">
-      <input id="name" name="name" type="text" class="form-control" required="required">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="email" class="col-4 col-form-label">Email Address</label> 
-    <div class="col-8">
-      <input id="email" name="email" type="text" class="form-control" required="required">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label class="col-4 col-form-label" for="comment">Comment</label> 
-    <div class="col-8">
-      <textarea id="comment" name="comment" cols="40" rows="3" class="form-control"></textarea>
-    </div>
-  </div>
-    
-  <div class="form-group row">
-    <label class="col-4">Attending day ceremony</label> 
-    <div class="col-8">
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input bind:checked={invite} name="day" id="day" type="checkbox" class="custom-control-input" value={true}> 
-        <label for="day" class="custom-control-label"></label>
-      </div>
-    </div>
-  </div>
-      <p>Please upload a clear photo of the menu choices for each guest below</p>
-      <input type="file" name="myFile">
-  
-  
-  <div class="form-group row">
-    <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </div>
-</form>
+<p>For any further information or to RSVP please do not hesistate to contact the Bride or Groom using the information provided below.</p>
+<Row>
+  <Col>
+    <h3>Bride</h3>
+    <p class="green"><Icon icon={faMobile}></Icon> <a href="tel:07850288813">07850288813</a></p>
+    <p class="green"><Icon icon={faEnvelope}></Icon> <a href="mailto:lucy.maric@hotmail.co.uk">lucy.maric@hotmail.co.uk</a></p>
+  </Col>
+  <Col>
+    <h3>Groom</h3>
+    <p class="green"><Icon class="green" icon={faMobile}></Icon> <a href="tel:07731590280">07731590280</a></p>
+    <p class="green"><Icon class="green" icon={faEnvelope}></Icon> <a href="mailto:tgreen0307@hotmail.co.uk">tgreen0307@hotmail.co.uk</a></p>
+  </Col>
+</Row>
+
 <br>
 <br>
 <br>
