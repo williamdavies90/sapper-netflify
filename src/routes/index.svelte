@@ -11,8 +11,9 @@
 <div>
 	<img alt="Lucy and Tim" width="640" class="mx-auto d-block img-fluid" src="../tim-and-lucy-mobile.jpg"/>
 </div>
-<h2 class="text-center mt-4 mb-0">June 27th 2020</h2>
+<h2 class="text-center mt-4 mb-0">27th June 2020</h2>
 <Countdown/>
+
 
 
 

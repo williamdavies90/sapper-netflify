@@ -10,6 +10,12 @@ header {
 	border-bottom: 1px solid lightgray;
 	margin-bottom: 1em;
 }
+
+@media (min-width: 769px) {
+	header {
+	border-bottom: none !important;
+	}
+}
 </style>
 
 <header>

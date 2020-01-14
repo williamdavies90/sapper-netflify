@@ -17,6 +17,7 @@
 		font-weight: 300;
 		padding: 0 1em;
 		text-align: center;
+		margin-bottom: 1em;
 	}
 
 	ul {
@@ -57,48 +58,56 @@
 		display: block;
 		text-transform: uppercase;
 	}
-	
-/*Touch Only*/
-nav {
-	position: fixed;
-	bottom: 0;
-	z-index: 999999;
-	width: 100%;
-	border-top: 1px solid lightgray;
-	ul {
-		width: 100%;
-		max-width: 600px;
-		margin-bottom: 0px;
-		li {
-			width: 20%;
-			color: gray !important;
-			a {
-				font-size: 22px;
-				line-height: 16px; 
-				padding-bottom: 5px;
-				span {
-					font-size: 12px !important;
-				}
-			}
-			a:hover, .selected {
-				color: darkgreen;
-				&:after {
-					background-color: inherit;
-				}
-			}
-		}	
+@media (min-width: 769px) {
+	nav {
+		border-top: none !important;
+	}
+	span.icon {
+		display: none !important;
 	}
 }
-
+@media (max-width: 768px) {
+	/*Touch Only*/
+	nav {
+		position: fixed;
+		bottom: 0;
+		z-index: 999999;
+		width: 100%;
+		border-top: 1px solid lightgray;
+		ul {
+			width: 100%;
+			max-width: 600px;
+			margin-bottom: 0px;
+			li {
+				width: 20%;
+				color: gray !important;
+				a {
+					font-size: 22px;
+					line-height: 16px; 
+					padding-bottom: 5px;
+					span {
+						font-size: 12px !important;
+					}
+				}
+				a:hover, .selected {
+					color: darkgreen;
+					&:after {
+						background-color: inherit;
+					}
+				}
+			}	
+		}
+	}
+}
 </style>
 
 <nav>
 	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'><Icon class="test mx-auto d-block" icon={faHome}></Icon><span>home</span></a></li>
-		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><Icon class="test mx-auto d-block" icon={faMap}></Icon><span>venue</span></a></li>
-		<li><a class:selected='{segment === "hotels"}' href='hotels'><Icon class="test mx-auto d-block" icon={faBed}></Icon><span>hotels</span></a></li>
-		<li><a class:selected='{segment === "gifts"}' href='gifts'><Icon class="test mx-auto d-block" icon={faGift}></Icon><span>gifts</span></a></li>
-		<li><a class:selected='{segment === "contact"}' href="contact"><Icon class="test mx-auto d-block" icon={faEnvelope}></Icon><span>contact</span></a></li>
+		<li><a class:selected='{segment === undefined}' href='.'><span class="icon"><Icon class="test mx-auto d-block" icon={faHome}></Icon></span><span>home</span></a></li>
+		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><span class="icon"><Icon class="test mx-auto d-block" icon={faMap}></Icon></span><span>venue</span></a></li>
+		<li><a class:selected='{segment === "hotels"}' href='hotels'><span class="icon"><Icon class="test mx-auto d-block" icon={faBed}></Icon></span><span>hotels</span></a></li>
+		<li><a class:selected='{segment === "gifts"}' href='gifts'><span class="icon"><Icon class="test mx-auto d-block" icon={faGift}></Icon></span><span>gifts</span></a></li>
+		<li><a class:selected='{segment === "contact"}' href="contact"><span class="icon"><Icon class="test mx-auto d-block" icon={faEnvelope}></Icon></span><span>contact</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches

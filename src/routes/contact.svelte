@@ -18,7 +18,7 @@ a {
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
-<p>For any further information or to RSVP please do not hesistate to contact the Bride or Groom using the information provided below.</p>
+<p>For any further information, to RSVP or to inform us of any dietary requirements please do not hesitate to contact us using the information provided below.</p>
 <Row>
   <Col>
     <h3>Bride</h3>
