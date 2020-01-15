@@ -13,11 +13,10 @@
 
 <style lang="scss">
 	nav {
-		border-bottom: 1px solid lightgray;
 		font-weight: 300;
 		padding: 0 1em;
 		text-align: center;
-		margin-bottom: 1em;
+		
 	}
 
 	ul {
@@ -61,6 +60,8 @@
 @media (min-width: 769px) {
 	nav {
 		border-top: none !important;
+		border-bottom: 1px solid lightgray;
+		margin-bottom: 1em;
 	}
 	span.icon {
 		display: none !important;
@@ -74,29 +75,33 @@
 		z-index: 999999;
 		width: 100%;
 		border-top: 1px solid lightgray;
-		ul {
+	}
+	nav ul {
 			width: 100%;
 			max-width: 600px;
-			margin-bottom: 0px;
-			li {
-				width: 20%;
-				color: gray !important;
-				a {
-					font-size: 22px;
-					line-height: 16px; 
-					padding-bottom: 5px;
-					span {
-						font-size: 12px !important;
-					}
-				}
-				a:hover, .selected {
-					color: darkgreen;
-					&:after {
-						background-color: inherit;
-					}
-				}
-			}	
+			margin-bottom: 0px !important;
+	}
+	li {
+		width: 20%;
+		color: gray !important;
+	}
+	li a {
+		font-size: 22px;
+		line-height: 16px; 
+		padding-bottom: 5px;
+	}
+	li a span {
+			font-size: 11px !important;
 		}
+	li a span.icon {
+			font-size: 22px !important;
+			line-height: 16px !important; 
+		}
+	a:hover, .selected {
+		color: darkgreen;
+	}
+	a:hover:after, .selected:after {
+		background-color: inherit;
 	}
 }
 </style>
@@ -106,7 +111,7 @@
 		<li><a class:selected='{segment === undefined}' href='.'><span class="icon"><Icon class="test mx-auto d-block" icon={faHome}></Icon></span><span>home</span></a></li>
 		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><span class="icon"><Icon class="test mx-auto d-block" icon={faMap}></Icon></span><span>venue</span></a></li>
 		<li><a class:selected='{segment === "hotels"}' href='hotels'><span class="icon"><Icon class="test mx-auto d-block" icon={faBed}></Icon></span><span>hotels</span></a></li>
-		<li><a class:selected='{segment === "gifts"}' href='gifts'><span class="icon"><Icon class="test mx-auto d-block" icon={faGift}></Icon></span><span>gifts</span></a></li>
+		<!-- <li><a class:selected='{segment === "gifts"}' href='gifts'><span class="icon"><Icon class="test mx-auto d-block" icon={faGift}></Icon></span><span>gifts</span></a></li> -->
 		<li><a class:selected='{segment === "contact"}' href="contact"><span class="icon"><Icon class="test mx-auto d-block" icon={faEnvelope}></Icon></span><span>contact</span></a></li>
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faEnvelope}></Icon><span>rsvp</span></a></li> -->
 		<!-- <li><a class:selected='{segment === "contact"}' href='contact'><Icon class="mx-auto d-block" icon={faMusic}></Icon><span>music</span></a></li> -->

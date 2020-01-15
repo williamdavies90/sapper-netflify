@@ -18,6 +18,7 @@ a {
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
+<h2>Contact Us</h2>
 <p>For any further information, to RSVP or to inform us of any dietary requirements please do not hesitate to contact us using the information provided below.</p>
 <Row>
   <Col>
