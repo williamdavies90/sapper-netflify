@@ -2,7 +2,8 @@
 import Icon from 'fa-svelte'
 import {
   faMobile,
-  faEnvelope
+  faEnvelope,
+  faRingsWedding
 } from "@fortawesome/free-solid-svg-icons";
   import Row from '../components/Row.svelte';
   import Col from '../components/Col.svelte';
@@ -23,13 +24,13 @@ a {
 <Row>
   <Col>
     <h3>Bride</h3>
-    <p class="green"><Icon icon={faMobile}></Icon> <a href="tel:07850288813">07850288813</a></p>
-    <p class="green"><Icon icon={faEnvelope}></Icon> <a href="mailto:lucy.maric@hotmail.co.uk">lucy.maric@hotmail.co.uk</a></p>
+    <p class="green"><Icon icon={faMobile}></Icon> <a target="_blank" href="tel:07850288813">07850288813</a></p>
+    <p class="green"><Icon icon={faEnvelope}></Icon> <a target="_blank" href="mailto:lucy.maric@hotmail.co.uk">lucy.maric@hotmail.co.uk</a></p>
   </Col>
   <Col>
     <h3>Groom</h3>
-    <p class="green"><Icon class="green" icon={faMobile}></Icon> <a href="tel:07731590280">07731590280</a></p>
-    <p class="green"><Icon class="green" icon={faEnvelope}></Icon> <a href="mailto:tgreen0307@hotmail.co.uk">tgreen0307@hotmail.co.uk</a></p>
+    <p class="green"><Icon class="green" icon={faMobile}></Icon> <a target="_blank" href="tel:07731590280">07731590280</a></p>
+    <p class="green"><Icon class="green" icon={faEnvelope}></Icon> <a target="_blank" href="mailto:tgreen0307@hotmail.co.uk">tgreen0307@hotmail.co.uk</a></p>
   </Col>
 </Row>
 

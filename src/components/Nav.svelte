@@ -2,10 +2,11 @@
 	import Icon from 'fa-svelte'
 	import {
 		faHome,
-		faMap,
+		faMapMarkedAlt,
 		faBed,
 		faGift,
-		faEnvelope
+		faEnvelope,
+		faRings
 	} from "@fortawesome/free-solid-svg-icons";
 	// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 	export let segment;
@@ -110,7 +111,7 @@
 <nav>
 	<ul>
 		<li><a class:selected='{segment === undefined}' href='.'><span class="icon"><Icon class="test mx-auto d-block" icon={faHome}></Icon></span><span>home</span></a></li>
-		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><span class="icon"><Icon class="test mx-auto d-block" icon={faMap}></Icon></span><span>venue</span></a></li>
+		<li><a rel=prefetch class:selected='{segment === "location"}' href='location'><span class="icon"><Icon class="test mx-auto d-block" icon={faMapMarkedAlt}></Icon></span><span>venue</span></a></li>
 		<li><a class:selected='{segment === "hotels"}' href='hotels'><span class="icon"><Icon class="test mx-auto d-block" icon={faBed}></Icon></span><span>hotels</span></a></li>
 		<!-- <li><a class:selected='{segment === "gifts"}' href='gifts'><span class="icon"><Icon class="test mx-auto d-block" icon={faGift}></Icon></span><span>gifts</span></a></li> -->
 		<li><a class:selected='{segment === "contact"}' href="contact"><span class="icon"><Icon class="test mx-auto d-block" icon={faEnvelope}></Icon></span><span>contact</span></a></li>

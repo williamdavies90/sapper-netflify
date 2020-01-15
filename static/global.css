@@ -24,7 +24,7 @@ a {
 	color: inherit;
 }
 
-a:hover, a:active, a:visited {
+a:hover, a:active {
 	color: darkgreen !important;
 }
 
@@ -44,5 +44,11 @@ code {
 @media (min-width: 400px) {
 	body {
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		padding-top: 65px !important;
 	}
 }

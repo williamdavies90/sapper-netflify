@@ -9,6 +9,7 @@
 header {
 	border-bottom: 1px solid lightgray;
 	margin-bottom: 1em;
+	
 }
 
 @media (min-width: 769px) {
@@ -16,6 +17,16 @@ header {
 	border-bottom: none !important;
 	}
 }
+@media (max-width: 767px) {
+	header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #FFFFFF;
+	border-top: 3px solid darkgreen;
+	}
+}
+
 </style>
 
 <header>
