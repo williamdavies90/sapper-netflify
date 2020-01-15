@@ -24,6 +24,10 @@ a {
 	color: inherit;
 }
 
+a:hover, a:active, a:visited {
+	color: darkgreen !important;
+}
+
 code {
 	font-family: menlo, inconsolata, monospace;
 	font-size: calc(1em - 2px);

@@ -70,6 +70,7 @@
 @media (max-width: 768px) {
 	/*Touch Only*/
 	nav {
+		background-color: #FFFFFF;
 		position: fixed;
 		bottom: 0;
 		z-index: 999999;
@@ -82,7 +83,7 @@
 			margin-bottom: 0px !important;
 	}
 	li {
-		width: 20%;
+		width: 25%;
 		color: gray !important;
 	}
 	li a {
