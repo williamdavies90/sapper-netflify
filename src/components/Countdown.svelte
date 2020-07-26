@@ -28,7 +28,7 @@ onMount(() => {
     hour = minute * 60,
     day = hour * 24;
     if (document.getElementById('days')){
-    let countDown = new Date('June 27, 2020 00:00:00').getTime(),
+    let countDown = new Date('August 28, 2021 00:00:00').getTime(),
     
     x = setInterval(function() {
 
